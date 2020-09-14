@@ -190,7 +190,11 @@ end
 
 function love.keypressed(key, isrepeat)
 	print("pressed", key);
-	if (tonumber(key) and toggleTransforms[tonumber(key)]) then
+	if (key == "right" ) then
+		local name = "anim_main";
+		increasePower[name] = increasePower[name] or -1;
+		increasePower[name] = increasePower[name] * -1;
+	elseif (tonumber(key) and toggleTransforms[tonumber(key)]) then
 		local name = toggleTransforms[tonumber(key)];
 		increasePower[name] = increasePower[name] or -1;
 		increasePower[name] = increasePower[name] * -1;

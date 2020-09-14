@@ -1,4 +1,4 @@
-local XmlParser = require("examples.util.XmlParser");
+local XmlParser = require("love-bone.examples.util.XmlParser");
 local boner = require(LIBNAME);
 -- Debug
 local function print_r(t, func, i, found)
